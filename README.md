@@ -28,6 +28,14 @@ This project introduces a modern, automated solution that: </br>
 - Stores the data in SQLITE for future analysis
 - Converts the results into a structured HTML report
 - Automatically distributes the report via SMTP email to a shared operations mailbox
+### Orchestration
+
+- Triggers: **08:00 Daily**
+- Program/script: **python.exe**
+- Arguments: **\\src\main.py**
+- Start in: **\\src**
+<img width="1599" height="368" alt="image" src="https://github.com/user-attachments/assets/f4270efb-3da1-4238-99ea-4004f0cd0876" />
+
 
 # Outcome
 
@@ -38,7 +46,7 @@ This project introduces a modern, automated solution that: </br>
 - Provides a data set for future analysis (which divisions use the most storage)
 
 
-The below shows what the report that the script produces looks like
+### Report
 
 __DISCLAIMER:__ Sensitive information has been blurred for privacy
 <img width="1062" height="1032" alt="image" src="https://github.com/user-attachments/assets/c3b9a0c3-bc88-4e9a-8d83-38ae073e01c7" />
