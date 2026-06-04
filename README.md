@@ -14,28 +14,28 @@ The script is orchestrated via Windows Task Schedular for 08:00 Daily.
 The objective of this project was to automate a manual governance check that ensures divisional offices have sufficient available quota on Windows SMB file servers for workload storage.
 Previously, this process required engineers to:
 
--Manually RDP into each Windows server
--Individually check filesystem quota availability
--Record and consolidate results manually
+- Manually RDP into each Windows server
+- Individually check filesystem quota availability
+- Record and consolidate results manually
 
--This approach was time-consuming, inefficient, and prone to human error.
+This approach was time-consuming, inefficient, and prone to human error.</br>
 Uses PowerShell to remotely query quota and disk availability across multiple on-prem Windows servers
 
 # Solution
 This project introduces a modern, automated solution that: </br>
--Uses PowerShell to remotely query quota and disk availability across multiple on-prem Windows servers
--Leverages Python to orchestrate execution and process the collected data
--Stores the data in SQLITE for future analysis
--Converts the results into a structured HTML report
--Automatically distributes the report via SMTP email to a shared operations mailbox
+- Uses PowerShell to remotely query quota and disk availability across multiple on-prem Windows servers
+- Leverages Python to orchestrate execution and process the collected data
+- Stores the data in SQLITE for future analysis
+- Converts the results into a structured HTML report
+- Automatically distributes the report via SMTP email to a shared operations mailbox
 
 # Outcome
 
--Eliminated the need for manual server checks
--Reduced operational overhead and time-to-report
--Improved accuracy and consistency of quota monitoring
--Provided a scalable, repeatable solution suitable for enterprise environments
--Provides a data set for future analysis (which divisions use the most storage)
+- Eliminated the need for manual server checks
+- Reduced operational overhead and time-to-report
+- Improved accuracy and consistency of quota monitoring
+- Provided a scalable, repeatable solution suitable for enterprise environments
+- Provides a data set for future analysis (which divisions use the most storage)
 
 
 The below shows what the report that the script produces looks like
